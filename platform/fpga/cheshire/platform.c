@@ -68,7 +68,7 @@ static struct aclint_mtimer_data mtimer = {
 	.mtimecmp_size = 16,
 	.first_hartid = 0,
 	.hart_count = CHESHIRE_HART_COUNT,
-	.has_64bit_mmio = FALSE,
+	.has_64bit_mmio = false,
 };
 
 /*
@@ -172,7 +172,7 @@ static int cheshire_console_init(void)
 			     uart.freq,
 			     uart.baud,
 			     CHESHIRE_UART_REG_SHIFT,
-			     CHESHIRE_UART_REG_WIDTH);
+			     CHESHIRE_UART_REG_WIDTH,
 			     CHESHIRE_UART_REG_OFFSET);
 }
 
